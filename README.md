@@ -35,11 +35,17 @@ cd taskflow-task-manager
 
 ### Client Setup
 1. Navigate to `/client` folder from `taskflow-task-manager` folder
-   `cd client`
-2. Install dependencies
-   `npm install`
-3. Start the development server
-   `npm run dev`
+   ```bash
+   cd client
+   ```
+3. Install dependencies
+   ```bash
+   npm install
+   ```
+5. Start the development server
+   ```bash
+   npm run dev
+   ```
 
 ### Server side setup
 1. On the seperate terminal window navigate to `/server` folder from `taskflow-task-manager` root folder
@@ -53,7 +59,7 @@ cd taskflow-task-manager
 4. Activate the venv
    - On windows :
      ```bash
-     venv\Scripts\activat.bat
+     venv\Scripts\activate.bat
      ```
    - On macOS/Linux:
      ```bash
