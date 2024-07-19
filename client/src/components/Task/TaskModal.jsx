@@ -7,7 +7,7 @@ const TaskModal = ({ display, setDisplay, task }) => {
   return (
     <div
       className={
-        "fixed inset-0 w-full h-full bg-gray-400/50 flex items-center justify-center"
+        "fixed inset-0 w-full h-full bg-gray-500/50 flex items-center justify-center"
       }
     >
       <div className="flex flex-col bg-white rounded-lg w-96 overflow-hidden">

@@ -6,6 +6,7 @@ import OnBoarding from "./components/OnBoarding/OnBoarding";
 import fetchAPI from "./libs/fetchAPI";
 import FullScreenLoading from "./components/Loaders/FullScreenLoading";
 import { Toaster } from "react-hot-toast";
+import TaskListLoader from "./components/Loaders/TaskListLoader";
 
 const taskInitialState = {
   id: null,
@@ -29,7 +30,9 @@ function App() {
           console.log("Error while fetching tasks from db", error)
         );
 
+      // setTimeout(() => {
       setReady(true);
+      // }, 4000);
     }
   };
 
@@ -67,7 +70,7 @@ function App() {
               setTask={setTask}
               taskInitialState={taskInitialState}
             />
-            {!ready && "Loading..."}
+            {!ready && <TaskListLoader />}
             {ready && (
               <TaskList
                 tasks={tasks}

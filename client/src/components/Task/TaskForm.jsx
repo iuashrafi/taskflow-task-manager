@@ -73,7 +73,7 @@ const TaskForm = ({ setTasks, workspace, task, setTask, taskInitialState }) => {
   };
 
   return (
-    <div className="bg-orange-100 shadow-sm p-4 md:p-6 rounded-lg mt-6">
+    <div className="bg-gradient-to-b from-orange-100 via-orange-200 to-orange-200 shadow-sm p-4 md:p-6 rounded-lg mt-6">
       <form
         onSubmit={handleSubmit}
         className="bg-indigo- flex items-end justify-center flex-wrap gap-4"
