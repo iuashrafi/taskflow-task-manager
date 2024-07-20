@@ -66,6 +66,11 @@ const TaskForm = ({ setTasks, workspace, task, setTask, taskInitialState }) => {
       })
         .then((updatedTask) => {
           console.log("Tasked updated successfully, task=", updatedTask);
+          setTasks((prevTasks) =>
+            prevTasks.map((task) =>
+              task.id === updatedTask.id ? updatedTask : task
+            )
+          );
           setTask(taskInitialState);
         })
         .catch((error) => console.error("Error updating task", error));
